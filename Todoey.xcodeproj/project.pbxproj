@@ -12,6 +12,7 @@
 		074A3F8920070724000A439A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074A3F8720070724000A439A /* Main.storyboard */; };
 		074A3F8B20070724000A439A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074A3F8A20070724000A439A /* Assets.xcassets */; };
 		074A3F8E20070724000A439A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074A3F8C20070724000A439A /* LaunchScreen.storyboard */; };
+		074A3F972007FDC6000A439A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074A3F962007FDC6000A439A /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		074A3F8A20070724000A439A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		074A3F8D20070724000A439A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		074A3F8F20070724000A439A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		074A3F962007FDC6000A439A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,8 @@
 			isa = PBXGroup;
 			children = (
 				074A3F8220070724000A439A /* Todoey */,
+				074A3F9C2007FE41000A439A /* Supporting Files */,
+				074A3F8F20070724000A439A /* Info.plist */,
 				074A3F8120070724000A439A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,13 +59,44 @@
 			isa = PBXGroup;
 			children = (
 				074A3F8320070724000A439A /* AppDelegate.swift */,
-				074A3F8520070724000A439A /* TodoListViewController.swift */,
-				074A3F8720070724000A439A /* Main.storyboard */,
-				074A3F8A20070724000A439A /* Assets.xcassets */,
-				074A3F8C20070724000A439A /* LaunchScreen.storyboard */,
-				074A3F8F20070724000A439A /* Info.plist */,
+				074A3F9B2007FDF9000A439A /* Views */,
+				074A3F982007FDE3000A439A /* Controllers */,
+				074A3F952007FDA5000A439A /* Data Model */,
 			);
 			path = Todoey;
+			sourceTree = "<group>";
+		};
+		074A3F952007FDA5000A439A /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				074A3F962007FDC6000A439A /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		074A3F982007FDE3000A439A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				074A3F8520070724000A439A /* TodoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		074A3F9B2007FDF9000A439A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				074A3F8720070724000A439A /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		074A3F9C2007FE41000A439A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				074A3F8C20070724000A439A /* LaunchScreen.storyboard */,
+				074A3F8A20070724000A439A /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				074A3F8620070724000A439A /* TodoListViewController.swift in Sources */,
+				074A3F972007FDC6000A439A /* Item.swift in Sources */,
 				074A3F8420070724000A439A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Todoey/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.miraco.Todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +325,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Todoey/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.miraco.Todoey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
